@@ -28,6 +28,8 @@ Legg inn ditt sertifikat og privatnøkkel i `data/`
 
 Start med `node tst.js`
 
+tst.js eksempelet henter informasjon fra kontakt- og reservervasjonsregisteret
+
 ## Client options
 
 | Parameter     | Verdi       |
