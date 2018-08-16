@@ -14,7 +14,7 @@
   try {
     const client = await openIdClient(clientOptions)
     const { token: { access_token: token } } = client.getConfig()
-    const payload = { personidentifikatorer: [ '26118645145' ] }
+    const payload = { personidentifikatorer: [ '23079422568' ] }
     const data = await client.getData({ url: clientOptions.url + 'kontaktinfo-oauth2-server/rest/v1/personer', token, payload })
     console.log(JSON.stringify(data, null, 2))
   } catch (error) {
