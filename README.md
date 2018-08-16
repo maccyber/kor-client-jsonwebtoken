@@ -1,13 +1,16 @@
-# WIP - Kontakt- og Reservasjonsregisteret klient
+# Kontakt- og Reservasjonsregisteret klient
 
 [Node.js](https://nodejs.org/en/) klient for kontakt- og reservasjonsregisterets Oauth2-API (Server-til-server) - [mer info](https://difi.github.io/idporten-oidc-dokumentasjon/oidc_api_krr.html)
 
 Denne klienten benytter [node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) for generering av JWT.
 
+Husk å stille klokken på PC-en(!)
+
 Programflyt
 1. Kjører discover av angitt URL, og henter informasjon fra ***<URL>/.well-known/openid-configuration***
 2. Lager JWT-token med sertifikat, og signerer med privat nøkkel
 3. Sender http-forespørsel med JWT for å hente token
+4. Mottar token
 
 ## Installasjon
 
