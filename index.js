@@ -40,6 +40,7 @@ module.exports = async options => {
   return {
     getConfig: () => config,
     getConfigParameter: param => config && config[param],
-    refreshToken: () => false
+    refreshToken: () => false,
+    getData: options => getData(options)
   }
 }
